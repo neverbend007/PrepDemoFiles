@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph "Phase 1: Project Setup & Foundation"
+        A[Create Next.js Project] --> B[Setup Directory Structure]
+        B --> C[Configure ESLint/Prettier]
+        
+        D[Install Dependencies] --> E[Prisma]
+        D --> F[Supabase Client]
+        D --> G[Form Validation]
+        D --> H[Email Library]
+        D --> I[UI Libraries]
+        
+        J[Database Setup] --> K[Initialize Prisma]
+        K --> L[Create Schema]
+        L --> M[Define Models]
+        M --> N[Prisma DB Push]
+        N --> O[Generate Client]
+        
+        P[API Routes Setup] --> Q[Newsletter Endpoints]
+        P --> R[Tools Endpoints]
+        
+        S[UI Foundation] --> T[Configure TailwindCSS]
+        T --> U[Create Base Components]
+        U --> V[Button Component]
+        U --> W[Input Component]
+        U --> X[Card Component]
+        U --> Y[Navigation Component]
+        
+        Z[Documentation] --> AA[Directory Structure]
+        Z --> AB[API Documentation]
+        Z --> AC[Schema Documentation]
+    end
+    
+    classDef nextjs fill:#000000,color:#ffffff,stroke:#ffffff
+    classDef prisma fill:#2D3748,color:#ffffff,stroke:#38B2AC
+    classDef ui fill:#1A202C,color:#38B2AC,stroke:#38B2AC
+    classDef docs fill:#2C5282,color:#ffffff,stroke:#ffffff
+    
+    class A,B,C nextjs
+    class E,F,G,H,I,J,K,L,M,N,O prisma
+    class S,T,U,V,W,X,Y ui
+    class Z,AA,AB,AC docs

@@ -1,0 +1,38 @@
+flowchart TD
+    A[User Visits Site] --> B{Views Landing Page}
+    
+    %% Newsletter Signup Flow
+    B --> C[Reads About Newsletter]
+    C --> D[Fills Signup Form]
+    D --> E[Submits Form]
+    E --> F{Form Validation}
+    F -->|Valid| G[Thank You Message]
+    F -->|Invalid| H[Error Message]
+    H --> D
+    G --> I[Confirmation Email Sent]
+    I --> J[User Clicks Confirmation Link]
+    J --> K[Subscription Confirmed]
+    
+    %% Tools Discovery Flow
+    B --> L[Navigates to Tools Directory]
+    L --> M{Browse Tools}
+    M --> N[Views by Category]
+    M --> O[Uses Search Function]
+    N --> P[Applies Category Filter]
+    O --> Q[Enters Search Query]
+    P --> R[Views Filtered Results]
+    Q --> R
+    R --> S[Selects Tool of Interest]
+    S --> T[Redirected to External Tool Website]
+    
+    %% Style definitions
+    classDef landing fill:#1e293b,color:#fff,stroke:#38bdf8
+    classDef newsletter fill:#164e63,color:#fff,stroke:#06b6d4
+    classDef tools fill:#1e40af,color:#fff,stroke:#3b82f6
+    classDef external fill:#4c1d95,color:#fff,stroke:#8b5cf6
+    
+    %% Apply styles
+    class A,B landing
+    class C,D,E,F,G,H,I,J,K newsletter
+    class L,M,N,O,P,Q,R,S tools
+    class T external

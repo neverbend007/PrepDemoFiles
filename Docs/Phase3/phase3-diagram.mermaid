@@ -1,0 +1,85 @@
+flowchart TB
+    subgraph "Phase 3: AI Tools Directory"
+        %% Tools Page Layout
+        A[Tools Page Layout] --> B[Page Header]
+        A --> C[Tools Grid/List]
+        A --> D[Category Visualization]
+        C --> C1[Tool Card Layout]
+        C --> C2[Responsive Grid]
+        C --> C3[Hover Effects]
+        
+        %% Category System
+        E[Category System] --> F[Data Structure]
+        E --> G[Selection Component]
+        E --> H[Filtering Logic]
+        F --> F1[Define 6 Categories]
+        F --> F2[Color Coding]
+        G --> G1[Filter UI]
+        G --> G2[Toggle Functionality]
+        G --> G3[Active Indicators]
+        
+        %% Search System
+        I[Search Functionality] --> J[Search Interface]
+        I --> K[Client-side Logic]
+        I --> L[Server-side API]
+        J --> J1[Search Input]
+        J --> J2[Clear Button]
+        K --> K1[Debounced Handler]
+        K --> K2[State Management]
+        K --> K3[Loading Indicators]
+        L --> L1[Search Endpoint]
+        L --> L2[Prisma Query]
+        
+        %% Combined Filtering
+        M[Combined Filtering] --> N[Unified Filter State]
+        M --> O[Multiple Filter Logic]
+        M --> P[URL Parameter Tracking]
+        
+        %% Tool Card
+        Q[Tool Card Component] --> R[Card Design]
+        Q --> S[Card Functionality]
+        R --> R1[Layout Design]
+        R --> R2[Visual Elements]
+        R --> R3[Link Button]
+        
+        %% Database & Data
+        T[Database Management] --> U[Seed Data Creation]
+        T --> V[Seed Script]
+        T --> W[API Endpoints]
+        U --> U1[Compile AI Tools]
+        U --> U2[Write Descriptions]
+        U --> U3[Assign Categories]
+        W --> W1[GET All Tools]
+        W --> W2[Category Filter]
+        W --> W3[Search Endpoint]
+        
+        %% Results Management
+        X[Results Management] --> Y[Pagination]
+        X --> Z[No Results State]
+        X --> AA[Optional Sorting]
+        
+        %% Documentation
+        AB[Documentation] --> AC[Component Docs]
+        AB --> AD[API Docs]
+        AB --> AE[Database Docs]
+        AB --> AF[Code Comments]
+    end
+    
+    %% Styling
+    classDef layout fill:#1e293b,color:#fff,stroke:#38bdf8
+    classDef category fill:#0f172a,color:#fff,stroke:#0ea5e9
+    classDef search fill:#164e63,color:#fff,stroke:#06b6d4
+    classDef filter fill:#0c4a6e,color:#fff,stroke:#0284c7
+    classDef card fill:#0f766e,color:#fff,stroke:#14b8a6
+    classDef database fill:#1e40af,color:#fff,stroke:#3b82f6
+    classDef results fill:#4c1d95,color:#fff,stroke:#8b5cf6
+    classDef docs fill:#7e22ce,color:#fff,stroke:#a855f7
+    
+    class A,B,C,D,C1,C2,C3 layout
+    class E,F,G,H,F1,F2,G1,G2,G3 category
+    class I,J,K,L,J1,J2,K1,K2,K3,L1,L2 search
+    class M,N,O,P filter
+    class Q,R,S,R1,R2,R3 card
+    class T,U,V,W,U1,U2,U3,W1,W2,W3 database
+    class X,Y,Z,AA results
+    class AB,AC,AD,AE,AF docs

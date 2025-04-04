@@ -1,0 +1,61 @@
+flowchart TB
+    subgraph "Phase 2: Core Landing Page"
+        %% Landing Page UI
+        A[Landing Page UI] --> B[Hero Section]
+        A --> C[Site Header]
+        A --> D[Site Footer]
+        B --> B1[Headline & Subheading]
+        B --> B2[Futuristic Visuals]
+        B --> B3[Responsive Design]
+        
+        %% Newsletter Form
+        E[Newsletter Signup] --> F[Form Design]
+        E --> G[Form Validation]
+        E --> H[Success/Error Messages]
+        F --> F1[Name Field]
+        F --> F2[Email Field]
+        F --> F3[Reason Field]
+        F --> F4[Submit Button]
+        
+        %% Server Implementation
+        I[Server-side Implementation] --> J[Validation Functions]
+        I --> K[API Endpoints]
+        I --> L[Token Generation]
+        K --> K1[Input Sanitization]
+        K --> K2[Database Operations]
+        K --> K3[Error Handling]
+        
+        %% Email System
+        M[Email System] --> N[Service Configuration]
+        M --> O[Email Template]
+        M --> P[Sending Functionality]
+        O --> O1[HTML Template]
+        O --> O2[Confirmation Link]
+        
+        %% Confirmation
+        Q[Confirmation System] --> R[Confirmation Endpoint]
+        Q --> S[Success Page]
+        R --> R1[Token Validation]
+        R --> R2[Update Database]
+        
+        %% Documentation
+        T[Documentation] --> U[Component Architecture]
+        T --> V[API Documentation]
+        T --> W[Email System Docs]
+        T --> X[User Flow Docs]
+    end
+    
+    %% Styling
+    classDef ui fill:#1e293b,color:#fff,stroke:#38bdf8
+    classDef form fill:#0f172a,color:#fff,stroke:#0ea5e9
+    classDef server fill:#164e63,color:#fff,stroke:#06b6d4
+    classDef email fill:#0c4a6e,color:#fff,stroke:#0284c7
+    classDef confirm fill:#0f766e,color:#fff,stroke:#14b8a6
+    classDef docs fill:#1e40af,color:#fff,stroke:#3b82f6
+    
+    class A,B,C,D,B1,B2,B3 ui
+    class E,F,G,H,F1,F2,F3,F4 form
+    class I,J,K,L,K1,K2,K3 server
+    class M,N,O,P,O1,O2 email
+    class Q,R,S,R1,R2 confirm
+    class T,U,V,W,X docs
