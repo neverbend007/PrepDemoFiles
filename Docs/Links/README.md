@@ -18,6 +18,9 @@ This directory contains important reference links and resources used throughout 
 ### Code Quality
 - [Vibe Coding Rules](https://gist.github.com/mberman84/98fa7d02a2d4c11071bf2bf63faa4713) - Essential guidelines for maintaining clean, efficient, and maintainable code in development projects
 
+### AI Conversations
+- [Project Documentation Creation Chat](https://claude.ai/share/9b78ceeb-04c8-4a35-94a0-f49daf28a7c7) - Full discussion with Claude LLM to create the project's documentation suite
+
 ## Link Categories
 
 Links are organized into the following categories:
@@ -25,5 +28,6 @@ Links are organized into the following categories:
 - Design References
 - Documentation Guidelines
 - Best Practices
+- AI Conversations
 
 Each category will be expanded as more resources are added during development. 
