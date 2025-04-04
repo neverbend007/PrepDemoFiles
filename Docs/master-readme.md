@@ -31,6 +31,8 @@ This project serves as a demonstration of modern web development practices, with
 - [Delivery Plan](techandaioverlords-delivery-plan.md) - Project phases and implementation timeline
 - [User Flows](techandaioverlords-user-flows.mermaid) - Visual representation of key user interactions
 - [GitHub Beginners Guide](github-beginners-guide.md) - Guide for version control and collaboration
+- [Rob's Cursor Rules](RobsCursorRules.md) - Comprehensive development and code quality guidelines
+- [Reference Links](Links/README.md) - Collection of useful resources and references
 
 ### Reference Links
 All important reference links and resources can be found in the [Links](Links/) directory.
