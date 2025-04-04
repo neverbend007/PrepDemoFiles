@@ -32,6 +32,9 @@ This project serves as a demonstration of modern web development practices, with
 - [User Flows](techandaioverlords-user-flows.mermaid) - Visual representation of key user interactions
 - [GitHub Beginners Guide](github-beginners-guide.md) - Guide for version control and collaboration
 
+### Reference Links
+All important reference links and resources can be found in the [Links](Links/) directory.
+
 ### Phase-Specific Documentation
 The project is implemented in four phases, each with detailed documentation:
 
